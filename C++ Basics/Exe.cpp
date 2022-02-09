@@ -1,5 +1,31 @@
 #include <iostream>
 using namespace std;
+
+// EXE 3
+// Calculate discounted bill amount
+void Discount(int amount)
+{
+    float disAmount;
+    
+    if(amount>=5000)
+    {
+        disAmount=amount-amount*20/100.0;
+        cout<<disAmount;
+    }
+    else
+    {
+        if(amount>=2000 && amount<5000)
+        {
+            disAmount=amount-amount*10/100.0;
+            cout<<disAmount;
+        }
+        else
+        {
+            disAmount=amount-amount*5/100.0;
+            cout<<disAmount;
+        }
+    }
+}
 int main()
 {
 
@@ -24,4 +50,5 @@ int main()
     cin >> percentDeduct;
     netSalary = basic + basic * percentAllow / 100 - basic * percentDeduct / 100;
     cout << "Net Salary is:" << netSalary << endl;
+
 }
