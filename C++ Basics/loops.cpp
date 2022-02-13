@@ -3,6 +3,7 @@ using namespace std;
 
 int main()
 {
+	/*
     // Exe 1 - Multiplication Table
     int number;
     cout <<"Enter the table number you want:" << endl;
@@ -51,18 +52,17 @@ int main()
 		cout<<"Prime Number";
 	else
 		cout<<"Not a Prime Number"; 
-
-    int n,r,rev=0;
-	cout<<"Enter the Number";
-	cin>>n;
+*/
+    int number,reversedNumber=0;
+	cout<<"Enter the Number: ";
+	cin>>number;
 	    
-	while(n>0)
+	while(number!=0)
 	{
-		r=n%10;
-	    n=n/10;
-		rev=rev*10+r;
+		reversedNumber *= 10;
+		reversedNumber += number % 10;
+		number /= 10;
 	}
-	cout<<"Reverse Number is"<<rev;
-     
+	cout<<"Reverse Number is: "<<reversedNumber;
     return 0;
 }
