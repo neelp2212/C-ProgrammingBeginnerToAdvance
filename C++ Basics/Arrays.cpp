@@ -45,9 +45,6 @@ int main()
         if (x < min)
             min = x;
     }
-
     cout << min;
-}
-
-return 0;
+    return 0;
 }
